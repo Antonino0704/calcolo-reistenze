@@ -119,6 +119,9 @@ public class Resistenze {
 		if (colore3.equals("oro")) {
 			resistor = valoreColore1 + "," + valoreColore2;
 		}
+		else if(valoreColore2 == 0) {
+			resistor = (valoreColore1 * valoreColore3) + "0";
+		}
 		else {
 			resistor = valoreColore1 + "" + (valoreColore2 * valoreColore3);
 		}
